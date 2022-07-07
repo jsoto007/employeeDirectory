@@ -3,7 +3,7 @@ fetch('http://localhost:3000/employees')
     .then(employeeData => employeeData.forEach(employee => renderData(employee)))
 
 function renderData(employees) {
-    let employeeInfo = document.createElement('li');
+    let employeeInfo = document.createElement('ul');
     employeeInfo.className = 'infoBox'
     employeeInfo.innerHTML = `
     <button class="infoBtn">${employees.name}</button><br>
