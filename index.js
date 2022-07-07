@@ -7,8 +7,13 @@ function renderData(employees) {
     employeeInfo.className = 'infoBox'
     employeeInfo.innerHTML = `
     <button class="infoBtn">${employees.name}</button><br>
-    <p>${employees.title}</p>
-    <p>${employees.schedule}</p>
+   
 `
     console.log(employeeInfo)
+    document.getElementById("p-01").appendChild(employeeInfo)
+}
+
+{
+    /* <p>${employees.title}</p>
+    <p>${employees.schedule}</p> */
 }
