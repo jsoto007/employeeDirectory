@@ -8,9 +8,11 @@ fetch('http://localhost:3000/employees')
 
 function renderBtn(employee) {
     const newBtn = document.createElement("button");
-    newBtn.addEventListener('click', () => console.log("This works"))
     newBtn.className = "infoBtn";
     newBtn.innerText = `${employee.name}`
+
+    newBtn.addEventListener('click', () => console.log("This works"))
+
     employeesInfo.appendChild(newBtn);
     //     `
     //     <button class="infoBtn">${employee.name}</button><br>
