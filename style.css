@@ -28,17 +28,13 @@ body {
     
 }
 
-#load_info_1 {
-    color: blue;
-}
-#load_info_2 {
-    color: blue;
-}#load_info_3 {
+.infoBtn {
     color: blue;
 }
 
 
-#h3-delete-info {
+
+#h4-delete-info {
     text-align: center;
     font-family: 'Times New Roman', Times, sefic;
 }
