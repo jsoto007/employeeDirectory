@@ -1,18 +1,23 @@
+const employeesInfo = document.createElement('ul');
+document.getElementById("p-01").appendChild(employeesInfo)
+
 fetch('http://localhost:3000/employees')
     .then(response => response.json())
     .then(employeeData => employeeData.forEach(employee => renderBtn(employee)))
 
-const employeeInfo = document.createElement('ul');
 
 function renderBtn(employee) {
-    employeeInfo.className = 'infoBox'
-    employeeInfo.innerHTML = `
-    <button class="infoBtn">${employee.name}</button><br>
-   
-`
-    document.getElementById("p-01").appendChild(employeeInfo)
+    const newBtn = document.createElement("button");
+    newBtn.addEventListener('click', () => console.log("This works"))
+    newBtn.className = "infoBtn";
+    newBtn.innerText = `${employee.name}`
+    employeesInfo.appendChild(newBtn);
+    //     `
+    //     <button class="infoBtn">${employee.name}</button><br>
 
-    addsEventListener(employee)
+    // `
+
+    // addsEventListener(employee)
 }
 
 
