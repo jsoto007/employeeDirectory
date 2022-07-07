@@ -1,0 +1,44 @@
+body {
+    /* text-align: center; */
+    background-color: F8F8FF;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    
+}
+
+#hi-title {
+    text-align: center;
+}
+#h2-page-info {
+    text-align: center;
+}
+
+#p-01 {
+    color: black
+    
+}
+
+#time_sheet {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Times New Roman', Times, sefic;
+    border:rgb(0, 0, 0) 
+    
+}
+
+#load_info_1 {
+    color: blue;
+}
+#load_info_2 {
+    color: blue;
+}#load_info_3 {
+    color: blue;
+}
+
+
+#h3-delete-info {
+    text-align: center;
+    font-family: 'Times New Roman', Times, sefic;
+}
