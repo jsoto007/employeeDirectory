@@ -12,9 +12,7 @@ function renderBtn(employee) {
     newBtn.className = "info-btn";
     newBtn.innerText = `${employee.name}`
 
-    newBtn.addEventListener('click', () => displayData(employee), {
-        once: true
-    })
+    newBtn.addEventListener('click', () => displayData(employee))
 
     employeesInfo.appendChild(newBtn);
 
@@ -22,8 +20,13 @@ function renderBtn(employee) {
 
 function displayData(employee) {
     const li = document.createElement('li')
-    li.className = "displayed-info"
+    li.className = "displayed-data"
     li.innerText = `NAME: ${employee.name} TITLE: ${employee.title} SHIFT: ${employee.shift}`
     employeeDisplayInfo.appendChild(li);
+    li.addEventListener('click', event => removeDisplayedInfo(event))
 
+}
+
+function removeDisplayedInfo(event) {
+    event.target.remove()
 }
