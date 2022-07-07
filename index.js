@@ -2,29 +2,52 @@ fetch('http://localhost:3000/employees')
     .then(response => response.json())
     .then(employeeData => employeeData.forEach(employee => renderBtn(employee)))
 
-function renderBtn(employees) {
-    let employeeInfo = document.createElement('ul');
+const employeeInfo = document.createElement('ul');
+
+function renderBtn(employee) {
     employeeInfo.className = 'infoBox'
     employeeInfo.innerHTML = `
-    <button class="infoBtn">${employees.name}</button><br>
+    <button class="infoBtn">${employee.name}</button><br>
    
 `
-    console.log(employeeInfo)
     document.getElementById("p-01").appendChild(employeeInfo)
 
-    addsEventListener(employees)
+    addsEventListener(employee)
 }
 
 
-function addsEventListener(employees) {
-    const btns = document.querySelectorAll(".infoBtn");
+function addsEventListener(employee) {
+    const btns = document.getElementsByClassName("infoBtn");
     console.log(btns);
-    btns.forEach(btn => btn.addEventListener('click', function () {
-        console.log(`${employees.name}`)
-    }))
+
+    for (let i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('click', function () {
+            console.log(`${employee.name}`)
+        }, false)
+    }
+    // btns.forEach(btn => btn.addEventListener('click', function () {
+    //     console.log(`${employees.name}`)
+    // }))
 
 }
 
+
+
+
+// function addsEventListener(employees) {
+//     const btns = document.getElementsByClassName("infoBtn");
+//     console.log(btns);
+
+//     for (let i = 0; i < btns.length; i++) {
+//         btns[i].addEventListener('click', function () {
+//             alert('this employee was clicked')
+//         }, false)
+//     }
+//     // btns.forEach(btn => btn.addEventListener('click', function () {
+//     //     console.log(`${employees.name}`)
+//     // }))
+
+// }
 // function addEventListeners() {
 
 //     const btns = document.querySelectorAll(".infoBtn");
@@ -32,11 +55,7 @@ function addsEventListener(employees) {
 //         console.log(e)
 //     })
 
-// const btns = document.querySelectorAll(".infoBtn");
-// for (let i = 0; i < btns.length; i++) {
-//     btns.forEach(btn => btn.addEventListener('click', function () {
-//         console.log('does this work')
-//     }, ))
+
 
 // }
 // }
