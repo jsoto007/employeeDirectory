@@ -20,6 +20,13 @@
             "title": "Asistant Program Director",
             "shift": "11:00 to 19:00",
             "schedule": "Monday, Tuesday, Wednesday, Thursday, Sathurday, Sunday"
+        },
+        {
+            "id": 4,
+            "name": "employee name 4",
+            "title": "Lead",
+            "shift": "11:00 to 19:00",
+            "schedule": "Tuesday, Wednesday, Thursday, Friday, Sathurday"
         }
     ]
 }
