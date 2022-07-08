@@ -4,16 +4,18 @@ const employeeDisplayInfo = document.getElementById('employee-information');
 const form = document.querySelector('#new-employee-form').addEventListener("submit", handlesForm)
 
 
-
-
 function renderBtn(employee) {
     const newBtn = document.createElement("button");
     newBtn.className = "info-btn";
     newBtn.innerText = `${employee.name}`
 
     newBtn.addEventListener('click', () => displayData(employee))
-
+    newBtn.addEventListener('mouseover', () => {
+        console.log(newBtn)
+    })
     employeesInfo.appendChild(newBtn);
+    document.querySelector('#new-employee-form').reset()
+
 }
 
 function displayData(employee) {
@@ -23,7 +25,6 @@ function displayData(employee) {
     employeeDisplayInfo.appendChild(li);
     li.addEventListener('click', event => removeDisplayedInfo(event))
 }
-
 
 function handlesForm(e) {
     e.preventDefault()
@@ -40,6 +41,11 @@ function handlesForm(e) {
 function removeDisplayedInfo(event) {
     event.target.remove()
 }
+
+function displayMouseOver() {
+
+}
+
 
 
 fetch('http://localhost:3000/employees')
