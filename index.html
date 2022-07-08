@@ -12,14 +12,19 @@
 </head>
 
 <body>
-    <form action="/my-handling-form-page" method="post">
-        Employee Name: <input class="inputbox" type="text" name="Full Name"><br>
-        Title: <input class="inputbox" type="text" name="Job Title"><br>
-        Shift: <input class="inputbox" type="text" name="Working Hours"><br>
-        Schedule: <input class="inputbox" id="shedule" type="text" name="Working Days"><br>
-        <input id="submit-button" type="button" value="Add New Employee">
-
-    </form>
+    <div class="container">
+        <form id="new-employee-form">
+            <label class="input-label" for="name">Employee's Full Name:</label>
+            <input class="input-box" type="text" name="name" id="name">
+            <label class="input-label" for="title">Job Title:</label>
+            <input class="input-box" type="text" name="title" id="title">
+            <label class="input-label" for="shift" name="shift">Shift Hours</label>
+            <input class="input-box" type="text" name="shift" id="shift">
+            <label class="input-label" for="Shedule" name="schedule">Shedule</label>
+            <textarea class="input-box" name="shedule" id="schedule" cols="15" rows="5"></textarea>
+            <button id="submit-btn" type="submit">Add New Employee</button>
+        </form>
+    </div>
 
     <h2 id=h2-page-info>Employee Information</h2>
 

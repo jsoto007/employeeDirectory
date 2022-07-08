@@ -30,3 +30,10 @@ function displayData(employee) {
 function removeDisplayedInfo(event) {
     event.target.remove()
 }
+
+
+document.querySelector('#new-employee-form').addEventListener("submit", handlesForm)
+
+function handlesForm(e) {
+    e.preventDefault()
+}
