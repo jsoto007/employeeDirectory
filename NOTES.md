@@ -2,6 +2,7 @@
 
 
 ###Functionality 
+
 #On-click
 - Displays the name of each employee in the server as a button.
 - When the button is clicked, employee data gets display in the client.
@@ -14,6 +15,12 @@
 - Information is added to the json server as a new employee. 
 - A new button is created. 
 - When the new button is created all functionalities of the on-clicked work. 
+
+#Streatch goals
+- On event deletes employee.
+- Sends a delete request to the server.
+- Deletes the btn.
+- Deletes info from server.
 
 
 

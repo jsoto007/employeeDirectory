@@ -41,6 +41,48 @@
       "shift": "1600 to 2300",
       "schedule": "Sunday Monday Off",
       "id": 6
+    },
+    {
+      "name": "",
+      "title": "",
+      "shift": "",
+      "schedule": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "title": "",
+      "shift": "",
+      "schedule": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "title": "",
+      "shift": "",
+      "schedule": "",
+      "id": 9
+    },
+    {
+      "name": "",
+      "title": "",
+      "shift": "",
+      "schedule": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "title": "",
+      "shift": "",
+      "schedule": "",
+      "id": 11
+    },
+    {
+      "name": "Jose ",
+      "title": "Lead",
+      "shift": "sadfasdf",
+      "schedule": "Sunday Monday Off",
+      "id": 12
     }
   ]
 }
