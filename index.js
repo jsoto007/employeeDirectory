@@ -1,6 +1,8 @@
 const employeesInfo = document.createElement('ul');
 document.getElementById("p-01").appendChild(employeesInfo);
 const employeeDisplayInfo = document.getElementById('employee-information');
+const form = document.querySelector('#new-employee-form').addEventListener("submit", handlesForm)
+
 
 fetch('http://localhost:3000/employees')
     .then(response => response.json())
@@ -15,7 +17,6 @@ function renderBtn(employee) {
     newBtn.addEventListener('click', () => displayData(employee))
 
     employeesInfo.appendChild(newBtn);
-
 }
 
 function displayData(employee) {
@@ -24,16 +25,33 @@ function displayData(employee) {
     li.innerText = `NAME: ${employee.name} TITLE: ${employee.title} SHIFT: ${employee.shift}`
     employeeDisplayInfo.appendChild(li);
     li.addEventListener('click', event => removeDisplayedInfo(event))
-
 }
 
 function removeDisplayedInfo(event) {
     event.target.remove()
 }
 
-
-document.querySelector('#new-employee-form').addEventListener("submit", handlesForm)
-
 function handlesForm(e) {
     e.preventDefault()
+    let employeeObj = {
+        name: e.target.name.value,
+        title: e.target.title.value,
+        shift: e.target.shift.value,
+        schedule: e.target.schedule.value
+    }
+    renderBtn(employeeObj)
+}
+
+
+function addsNewEmployee(employeeObj) {
+    fetch('http://localhost:3000/employees', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(employeeObj)
+
+        })
+        .then(response => response.json())
+        .then(employee => console.log(employee))
 }
