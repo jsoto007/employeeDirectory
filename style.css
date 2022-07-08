@@ -5,7 +5,28 @@ body {
     padding-right: 30px;
     padding-bottom: 50px;
     padding-left: 80px;
-    
+}
+html {
+    background: url("https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+  .displayed-data{
+    text-align: center;
+    background-color: rgba(216, 212, 212, 0.424);
+  }
+
+#title {
+    text-align: center;
+    font-family: Lorem ipsum dolor sit amet;
+    color: rgb(0, 0, 0);
+}
+.form-container {
+    background-color: rgba(216, 212, 212, 0.424);
+    padding: auto;
+    text-align: center;
+    font-size: large;
 }
 
 #hi-title {
@@ -37,4 +58,6 @@ body {
 #h4-delete-info {
     text-align: center;
     font-family: 'Times New Roman', Times, sefic;
+    font-size: large;
+    font-display: auto;
 }

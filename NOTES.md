@@ -16,7 +16,7 @@
 - A new button is created. 
 - When the new button is created all functionalities of the on-clicked work. 
 
-#Streatch goals
+###Streatch goals
 - On event deletes employee.
 - Sends a delete request to the server.
 - Deletes the btn.
