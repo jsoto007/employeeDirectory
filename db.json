@@ -1,32 +1,46 @@
 {
-    "employees": [
-        {
-            "id": 1,
-            "name": "employee name 1",
-            "title": "Program Director",
-            "shift": "09:00 to 17:00",
-            "schedule": "Tuesday, Wednesday, Thursday, Friday, Sathurday"
-        },
-        {
-            "id": 2,
-            "name": "employee name 2",
-            "title": "Asistant Program Director",
-            "shift": "08:00 to 16:00",
-            "schedule": "Monday, Tuesday, Wednesday, Thursday, Sathurday, Sunday"
-        },
-        {
-            "id": 3,
-            "name": "employee name 3",
-            "title": "Asistant Program Director",
-            "shift": "11:00 to 19:00",
-            "schedule": "Monday, Tuesday, Wednesday, Thursday, Sathurday, Sunday"
-        },
-        {
-            "id": 4,
-            "name": "employee name 4",
-            "title": "Lead",
-            "shift": "11:00 to 19:00",
-            "schedule": "Tuesday, Wednesday, Thursday, Friday, Sathurday"
-        }
-    ]
+  "employees": [
+    {
+      "id": 1,
+      "name": "employee name 1",
+      "title": "Program Director",
+      "shift": "09:00 to 17:00",
+      "schedule": "Tuesday, Wednesday, Thursday, Friday, Sathurday"
+    },
+    {
+      "id": 2,
+      "name": "employee name 2",
+      "title": "Asistant Program Director",
+      "shift": "08:00 to 16:00",
+      "schedule": "Monday, Tuesday, Wednesday, Thursday, Sathurday, Sunday"
+    },
+    {
+      "id": 3,
+      "name": "employee name 3",
+      "title": "Asistant Program Director",
+      "shift": "11:00 to 19:00",
+      "schedule": "Monday, Tuesday, Wednesday, Thursday, Sathurday, Sunday"
+    },
+    {
+      "id": 4,
+      "name": "employee name 4",
+      "title": "Lead",
+      "shift": "11:00 to 19:00",
+      "schedule": "Tuesday, Wednesday, Thursday, Friday, Sathurday"
+    },
+    {
+      "name": "Jose Soto",
+      "title": "Lead",
+      "shift": "1600 to 2300",
+      "schedule": "Sunday Monday Off",
+      "id": 5
+    },
+    {
+      "name": "Jose Soto",
+      "title": "Lead",
+      "shift": "1600 to 2300",
+      "schedule": "Sunday Monday Off",
+      "id": 6
+    }
+  ]
 }

@@ -4,9 +4,6 @@ const employeeDisplayInfo = document.getElementById('employee-information');
 const form = document.querySelector('#new-employee-form').addEventListener("submit", handlesForm)
 
 
-fetch('http://localhost:3000/employees')
-    .then(response => response.json())
-    .then(employeeData => employeeData.forEach(employee => renderBtn(employee)))
 
 
 function renderBtn(employee) {
@@ -27,9 +24,6 @@ function displayData(employee) {
     li.addEventListener('click', event => removeDisplayedInfo(event))
 }
 
-function removeDisplayedInfo(event) {
-    event.target.remove()
-}
 
 function handlesForm(e) {
     e.preventDefault()
@@ -40,8 +34,17 @@ function handlesForm(e) {
         schedule: e.target.schedule.value
     }
     renderBtn(employeeObj)
+    addsNewEmployee(employeeObj)
 }
 
+function removeDisplayedInfo(event) {
+    event.target.remove()
+}
+
+
+fetch('http://localhost:3000/employees')
+    .then(response => response.json())
+    .then(employeeData => employeeData.forEach(employee => renderBtn(employee)))
 
 function addsNewEmployee(employeeObj) {
     fetch('http://localhost:3000/employees', {
