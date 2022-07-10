@@ -23,7 +23,7 @@ html {
     color: rgb(0, 0, 0);
 }
 .form-container {
-    background-color: rgba(216, 212, 212, 0.424);
+    background-color: rgba(216, 212, 212, 0.419);
     /* background-color: F8F8FF; */
     padding: auto;
     text-align: center;
@@ -59,7 +59,7 @@ html {
 #h4-delete-info {
     text-align: center;
     font-family: 'Times New Roman', Times, sefic;
-    background-color: rgba(216, 212, 212, 0.197);
+    background-color: rgba(229, 227, 227, 0.682);
     font-size: large;
     font-display: auto;
 }

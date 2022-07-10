@@ -10,9 +10,15 @@ function renderBtn(employee) {
     newBtn.innerText = `${employee.name}`
 
     newBtn.addEventListener('click', () => displayData(employee))
-    newBtn.addEventListener('mouseover', () => {
-        console.log(newBtn)
+
+    newBtn.addEventListener('mouseover', (e) => {
+        e.target.style.color = "orange";
+        setTimeout(function () {
+            e.target.style.color = "";
+        }, 700);
+
     })
+
     employeesInfo.appendChild(newBtn);
     document.querySelector('#new-employee-form').reset()
 
