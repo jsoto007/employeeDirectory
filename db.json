@@ -27,6 +27,27 @@
       "title": "Lead",
       "shift": "11:00 to 19:00",
       "schedule": "Tuesday, Wednesday, Thursday, Friday, Sathurday"
+    },
+    {
+      "name": "Michaele Pena",
+      "title": "Youth Care Worker",
+      "shift": "12-8 AM",
+      "schedule": "Friday Saturday Off",
+      "id": 5
+    },
+    {
+      "name": "Jose Soto",
+      "title": "Lead",
+      "shift": "1600 to 2300",
+      "schedule": "Sunday Monday Off",
+      "id": 6
+    },
+    {
+      "name": "Jose J Soto",
+      "title": "Lead",
+      "shift": "morning",
+      "schedule": "everyday",
+      "id": 7
     }
   ]
 }

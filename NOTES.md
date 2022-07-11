@@ -33,5 +33,10 @@ https://www.w3schools.com/jsref/met_element_addeventlistener.asp
 -Forms:
 https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
 
--POST
+-POST:
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+-JSON Server:
+https://www.npmjs.com/package/json-server
+
+

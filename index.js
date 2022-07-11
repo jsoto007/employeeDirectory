@@ -15,7 +15,7 @@ function renderBtn(employee) {
         e.target.style.color = "orange";
         setTimeout(function () {
             e.target.style.color = "";
-        }, 700);
+        }, 530);
 
     })
 
@@ -48,9 +48,6 @@ function removeDisplayedInfo(event) {
     event.target.remove()
 }
 
-function displayMouseOver() {
-
-}
 
 
 
